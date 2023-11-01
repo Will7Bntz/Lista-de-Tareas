@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,800&family=Paytone+One&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.wrapper {
+    position: relative;
+    width: 90%; /* Adjusted width */
+    max-width: 500px; /* Added max-width */
+    height: 740px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Added margin for spacing */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+h1 {
+    font-size: 2em;
+    color: rgb(242, 239, 253);
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    width: 48%;
+    height: 35px;
+    margin-right: 2%;
+    background: rgb(29, 4, 97);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    color: white; /* Cambiar el color del texto a blanco */
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.completed {
+    background-color: rgba(0, 128, 0, 0.2); /* Light green */
+    color: rgba(0, 128, 0, 0.8);
+}
+
+.pending {
+    background-color: rgba(255, 0, 0, 0.2); /* Light red */
+    color: rgba(255, 0, 0, 0.8);
+}
+/* ... (otros estilos) */
+
+button:active {
+    transform: translateY(1px);
+}
+
+button.completed:active {
+    background-color: rgba(0, 128, 0, 0.4);
+    color: rgba(255, 255, 255, 1); /* Cambiar color de texto a blanco al presionar */
+}
+
+button.pending:active {
+    background-color: rgba(255, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 1); /* Cambiar color de texto a blanco al presionar */
+}
+
+/* ... (otros estilos) */
